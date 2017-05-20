@@ -4,7 +4,7 @@
   "description": "first angular2 project",
   "main": "index.js",
   "scripts": {
-     "start": "webpack-dev-server --inline --colors --watch --display-error-details --display-cached  --port 9000s --hot"
+     "start": "webpack-dev-server  --port 9000 "
   },
   "repository": {
     "type": "git",
