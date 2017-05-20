@@ -1,0 +1,22 @@
+{
+  "name": "angular2",
+  "version": "1.0.0",
+  "description": "first angular2 project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gauravabhi/angular2.git"
+  },
+  "author": "abhishek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gauravabhi/angular2/issues"
+  },
+  "homepage": "https://github.com/gauravabhi/angular2#readme",
+  "dependencies": {
+    "@angular/common": "^4.1.3"
+  }
+}
