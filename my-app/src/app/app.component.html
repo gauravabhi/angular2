@@ -1,3 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+<section class="container">
+  <header>
+  </header>
+  <aside>
+    <nav>
+      <ul>
+        <li><a>Home</a></li>
+        <li><a [routerLink]="['/about']">About</a></li>
+        <li><a [routerLink]="['/contact']">Contact</a></li>
+    
+      </ul>
+    </nav>
+  </aside>
+<section class="view">
+  <router-outlet></router-outlet>
+</section>
+</section>
+
