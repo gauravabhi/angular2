@@ -1,7 +1,8 @@
 <h3>This is About page</h3>
-<form >
-     <div class="form-group"><input class="form-control" type="text"  placeholder="FirstName"></div>
-    <div class="form-group"><input class="form-control" type="text"  placeholder="LastName"></div>
-    <div class="form-group"><input class="form-control" type="text"  placeholder="Age"></div>
-    <div class="form-group"><input class="form-control" type="text"  placeholder="Gender"></div>
+<form  #aboutform="ngForm" (ngSubmit)="onSubmit()">
+     <div class="form-group"><input [(ngModel)]="modal.firstname" #firstname="ngModel" name="firstname" class="form-control" type="text"  placeholder="FirstName"></div>
+    <div class="form-group"><input [(ngModel)] ="modal.lastname" #lastname="ngModel" name="lastname" class="form-control" type="text"  placeholder="LastName"></div>
+    <div class="form-group"><input [(ngModel)]="modal.age" #age="ngModel" name="age" class="form-control" type="text"  placeholder="Age"></div>
+    <div class="form-group"><input [(ngModel)]="modal.gender" #gender="ngModel" name="gender" class="form-control" type="text"  placeholder="Gender"></div>
+    <button type="submit" class="btn btn-success" [disabled]="!aboutform.form.valid">Submit</button>
 </form>

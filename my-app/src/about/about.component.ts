@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Modal } from './about.modal';
 
 @Component({
 
@@ -7,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class AboutComponent implements OnInit{
-  
-   ngOnInit(){}
+  public modal:any;
+   ngOnInit(){
+    this.modal=new Modal("abhishek","gaurav",28,"Male");
+
+   }
+  submitted = false;
+
+  onSubmit() { this.submitted = true; console.log(JSON.stringify(this.modal));}
 }
