@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Modal } from './about.modal';
+import {FormBuilder,FormGroup,Validators} from '@angular/forms';
 
 @Component({
 
@@ -9,13 +10,13 @@ import { Modal } from './about.modal';
 
 })
 
-export class AboutComponent implements OnInit{
+export class AboutComponent{
   public modal:any;
-   ngOnInit(){
-    this.modal=new Modal("abhishek","gaurav",28,"Male");
-
-   }
+  aboutForm:FormGroup;
+  constructor(fb:FormBuilder){
+    this.aboutForm=fb.group(new Modal([null,Validators.compose([Validators.required,Validators.minLength(8)])],"gaurav",28,"Male"));
+  }
   submitted = false;
 
-  onSubmit() { this.submitted = true; console.log(JSON.stringify(this.modal));}
+  onSubmit(value:any) { this.submitted = true; console.log(JSON.stringify(value));}
 }

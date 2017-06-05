@@ -1,6 +1,6 @@
 export class Modal{
     constructor(
-        public firstname:string,
+        public firstname:any[],
         public lastname:string,
         public age:number,
         public gender:string
