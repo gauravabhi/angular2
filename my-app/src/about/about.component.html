@@ -1,4 +1,5 @@
-<h3>This is About page</h3>
+<h3 myHidden>This is About page</h3>
+
 <form  [formGroup]="aboutForm" (ngSubmit)="onSubmit(aboutForm.value)">
      <div class="form-group" [ngClass]="{'has-error':!aboutForm.controls['firstname'].valid}"><input [formControl]="aboutForm.controls['firstname']" name="firstname" class="form-control" type="text"  placeholder="FirstName"><span *ngIf="!aboutForm.controls['firstname'].valid">FirstName Required</span></div>
     <div class="form-group"><input [formControl] ="aboutForm.controls['lastname']"  name="lastname" class="form-control" type="text"  placeholder="LastName"></div>

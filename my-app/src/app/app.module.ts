@@ -7,13 +7,16 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from '../about/about.component';
 import { ContactComponent } from '../contact/contact.component';
 import { routing } from './app.routes';
+import { HiddenDirective } from 'assets/hidden.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    HiddenDirective
   ],
+
   imports: [
     BrowserModule,
     FormsModule,
