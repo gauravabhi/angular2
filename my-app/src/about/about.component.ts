@@ -12,7 +12,7 @@ import {FormBuilder,FormGroup,Validators} from '@angular/forms';
 
 export class AboutComponent{
   public modal:any;
-  aboutForm:FormGroup;
+  public aboutForm:FormGroup;
   constructor(fb:FormBuilder){
     this.aboutForm=fb.group(new Modal([null,Validators.compose([Validators.required,Validators.minLength(8)])],"gaurav",28,"Male"));
   }
